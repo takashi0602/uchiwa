@@ -5,6 +5,10 @@
 
 // TODO: あとで書く
 
+ダイソーで300円で購入したBluetoothリモートシャッター
+
+<img src="./img/bluetooth_remote_shutter.jpg" width="300">
+
 # 設定
 
 ### Bluetoothを扱うために必要なパッケージをインストール
