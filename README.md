@@ -28,21 +28,6 @@ $ sudo apt-get install ruby
 $ sudo gem install bluebutton
 ```
 
-### Bluetoothのペアリング
-
-Bluetoothリモートシャッターの電源を入れ, コンソールで以下のコマンドを叩く.
-
-```bash
-$ bluetoothctl
-[bluetooth]# power on                  // bluetoothctlを起動
-[bluetooth]# scan on                   // スキャンを開始
-...
-Device FF:FF:XX:XX:XX:XX AB Shutter3
-...
-[bluetooth]# info FF:FF:XX:XX:XX:XX    // Shutter3の情報を表示
-[bluetooth]# pair FF:FF:XX:XX:XX:XX    // Shutter3とペアリング
-```
-
 ### bluebuttonの設定
 
 ```bash
@@ -58,10 +43,25 @@ longup=echo LONG UP!
 longdown=echo LONG DOWN!
 ```
 
-### bluebuttonを起動
+### Bluetoothのペアリング
+
+Bluetoothリモートシャッターの電源を入れ, コンソールで以下のコマンドを叩く.
+
+```bash
+$ bluetoothctl
+[bluetooth]# power on                  // bluetoothctlを起動
+[bluetooth]# scan on                   // スキャンを開始
+...
+Device FF:FF:XX:XX:XX:XX AB Shutter3
+...
+[bluetooth]# info FF:FF:XX:XX:XX:XX    // Shutter3の情報を表示
+[bluetooth]# pair FF:FF:XX:XX:XX:XX    // Shutter3とペアリング
+```
+
+### bluebuttonの実行
 
 ```bash
 $ bluebutton -d="Shutter3" -c ./bluebutton
 ```
 
-bluebuttonを起動後, Bluetoothリモートシャッターのボタンを押すと設定ファイルに書いた処理が走る.
+bluebuttonの実行後, Bluetoothリモートシャッターのボタンを押すと設定ファイルの対応した処理が走る.
