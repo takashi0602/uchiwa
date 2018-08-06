@@ -7,7 +7,11 @@
 
 ダイソーで300円で購入したBluetoothリモートシャッター
 
-<img src="./img/bluetooth_remote_shutter.jpg" width="300">
+<img src="./img/bluetooth_remote_shutter.jpg" width="350">
+
+Raspberry Pi 3にRaspbianを書き込み済みのmicroSD, 電源, マウス, キーボード, ディスプレイ, LANケーブル等を繋げたもの
+
+<img src="./img/raspberrypi.jpg" width="350">
 
 # 設定
 
