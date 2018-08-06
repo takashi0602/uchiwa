@@ -3,8 +3,6 @@
 
 # 必要なもの
 
-// TODO: あとで書く
-
 ダイソーで300円で購入したBluetoothリモートシャッター
 
 <img src="./img/bluetooth_remote_shutter.jpg" width="350">
@@ -21,7 +19,16 @@ Raspberry Pi 3にRaspbianを書き込み済みのmicroSD, 電源, マウス, キ
 $ sudo apt-get install bluez bluetooth libbluetooth-dev build-essential
 ```
 
+### ボタン操作の検知に必要なパッケージをインストール
+
+```bash
+$ sudo apt-get install ruby
+$ sudo gem install bluebutton
+```
+
 ### Bluetoothのペアリング
+
+Bluetoothリモートシャッターの電源を入れ, コンソールで以下のコマンドを叩く.
 
 ```bash
 $ bluetoothctl
@@ -32,13 +39,6 @@ Device FF:FF:XX:XX:XX:XX AB Shutter3
 ...
 [bluetooth]# info FF:FF:XX:XX:XX:XX    // Shutter3の情報を表示
 [bluetooth]# pair FF:FF:XX:XX:XX:XX    // Shutter3とペアリング
-```
-
-### ボタン操作の検知に必要なパッケージをインストール
-
-```bash
-$ sudo apt-get install ruby
-$ sudo gem install bluebutton
 ```
 
 ### bluebuttonの設定
@@ -61,3 +61,5 @@ longdown=echo LONG DOWN!
 ```bash
 $ bluebutton -d="Shutter3" -c ./bluebutton
 ```
+
+bluebuttonを起動後, Bluetoothリモートシャッターのボタンを押すと設定ファイルに書いた処理が走る.
