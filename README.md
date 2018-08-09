@@ -30,6 +30,13 @@ $ sudo apt-get install ruby
 $ sudo gem install bluebutton
 ```
 
+### リポジトリのクローン
+
+```
+$ git clone https://github.com/tyokinuhata/uchiwa.git
+$ cd uchiwa
+```
+
 ### bluebuttonの設定
 
 ```bash
