@@ -1,4 +1,4 @@
 keyup=echo KEY UP!
-keydown=echo KEY DOWN!
+keydown=sudo python3 app.py
 longup=echo LONG UP!
 longdown=echo LONG DOWN!
