@@ -1,5 +1,7 @@
 # うちわ
-[ぼく] =押す=> [Bluetoothボタン] =電波を発信する=> [ラズパイ] =動かす=> [サーボモータ] =動かす=> [うちわ] =発生させる=> [風&#x1f300;] => 涼しい！
+[Bluetoothボタン] => [ラズパイ] => [サーボモータ] => [うちわ] => [風&#x1f300;] => 涼しい！
+
+// TODO: gif
 
 ## 必要なもの
 
@@ -26,6 +28,13 @@ $ sudo apt-get install bluez bluetooth libbluetooth-dev build-essential
 ```bash
 $ sudo apt-get install ruby
 $ sudo gem install bluebutton
+```
+
+### リポジトリのクローン
+
+```
+$ git clone https://github.com/tyokinuhata/uchiwa.git
+$ cd uchiwa
 ```
 
 ### bluebuttonの設定
