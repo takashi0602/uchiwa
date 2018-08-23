@@ -9,13 +9,22 @@
 
 <img src="./img/bluetooth_remote_shutter.jpg" width="350">
 
-Raspberry Pi 3にRaspbianを書き込み済みのmicroSD, 電源, マウス, キーボード, ディスプレイ, LANケーブル等を繋げたもの
+SSH接続が可能なRaspberry Pi
 
 <img src="./img/raspberrypi.jpg" width="350">
 
 // TODO: サーボモータ, うちわ
 
 ## 設定
+
+### SSH接続
+
+```bash
+$ ssh pi@raspberrypi.local
+pi@raspberrypi.local's password:
+...
+pi@raspberrypi:~ $
+```
 
 ### Bluetoothを扱うために必要なパッケージをインストール
 
