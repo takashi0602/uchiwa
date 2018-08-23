@@ -1,3 +1,5 @@
+# うちわを動かす
+
 import RPi.GPIO as GPIO
 import time
 
