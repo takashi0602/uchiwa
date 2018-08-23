@@ -26,27 +26,27 @@ pi@raspberrypi.local's password:
 pi@raspberrypi:~ $
 ```
 
-### Bluetoothを扱うために必要なパッケージをインストール
+### Bluetoothを扱うために必要なパッケージをインストール(初回のみ)
 
 ```bash
 $ sudo apt-get install bluez bluetooth libbluetooth-dev build-essential
 ```
 
-### ボタン操作の検知に必要なパッケージをインストール
+### ボタン操作の検知に必要なパッケージをインストール(初回のみ)
 
 ```bash
 $ sudo apt-get install ruby
 $ sudo gem install bluebutton
 ```
 
-### リポジトリのクローン
+### リポジトリのクローン(初回のみ)
 
 ```
 $ git clone https://github.com/tyokinuhata/uchiwa.git
 $ cd uchiwa
 ```
 
-### bluebuttonの設定
+### bluebuttonの設定(必要に応じて)
 
 ```bash
 $ vim bluebutton
@@ -61,7 +61,7 @@ longup=echo LONG UP!
 longdown=echo LONG DOWN!
 ```
 
-### Bluetoothのペアリング
+### Bluetoothのペアリング(毎回)
 
 Bluetoothリモートシャッターの電源を入れ, コンソールで以下のコマンドを叩く.
 
@@ -76,7 +76,7 @@ Device FF:FF:XX:XX:XX:XX AB Shutter3
 [bluetooth]# pair FF:FF:XX:XX:XX:XX    // Shutter3とペアリング
 ```
 
-### bluebuttonの実行
+### bluebuttonの実行(毎回)
 
 ```bash
 $ bluebutton -d="Shutter3" -c ./bluebutton
