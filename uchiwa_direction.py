@@ -1,6 +1,7 @@
 # うちわの向きを変える
 
 import RPi.GPIO as GPIO
+import time
 
 GPIO.setmode(GPIO.BCM)
 
@@ -27,14 +28,15 @@ for row in fr:
 fr.close()
 
 # デューティサイクルの値を変更することでサーボが回って角度が変わる。
-servo.ChangeDutyCycle(direction / 10)
+servo.ChangeDutyCycle(direction)
+time.sleep(0.5)
 
 # ファイル書き込み
-if direction >= 180:
-    direction = 0
+if direction >= 12:
+    direction = 2
 
 fw = open('direction', 'w')
-fw.write(str(direction + 10))
+fw.write(str(direction + 1))
 fw.close()
 
 servo.stop()
