@@ -24,18 +24,17 @@ fr = open('direction', 'r')
 direction = 0
 for row in fr:
     direction = int(row.strip())
+fr.close()
 
 # デューティサイクルの値を変更することでサーボが回って角度が変わる。
 servo.ChangeDutyCycle(direction / 10)
 
+# ファイル書き込み
 if direction >= 180:
     direction = 0
 
-# ファイル書き込み
 fw = open('direction', 'w')
 fw.write(str(direction + 10))
-
-fr.close()
 fw.close()
 
 servo.stop()
