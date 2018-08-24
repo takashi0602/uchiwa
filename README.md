@@ -1,4 +1,4 @@
-# うちわ
+# Winds Servo 2018 Summer Edition
 [Bluetoothボタン] => [ラズパイ] => [サーボモータ] => [うちわ] => [風&#x1f300;] => 涼しい！
 
 // TODO: gif
@@ -13,7 +13,11 @@ SSH接続が可能なRaspberry Pi
 
 <img src="./img/raspberrypi.jpg" width="350">
 
-// TODO: サーボモータ, うちわ
+サーボ２つ
+
+<img src="./img/servo.jpg" width="350">
+
+// TODO: うちわ
 
 ## 設定
 
