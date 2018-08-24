@@ -1,7 +1,9 @@
 # Winds Servo 2018 Summer Edition
-[Bluetoothボタン] => [ラズパイ] => [サーボモータ] => [うちわ] => [風&#x1f300;] => 涼しい！
+Bluetoothボタンを押すとラズパイに取り付けたうちわが動作し, 涼しい気持ちになれます&#x1f300;
 
 // TODO: gif
+
+短く押すとうちわが扇ぎ, 長く押すとうちわの方向転換を行います.
 
 ## 必要なもの
 
@@ -19,9 +21,9 @@ SSH接続が可能なRaspberry Pi
 
 // TODO: うちわ
 
-## ディレクトリ構成
+## ファイル構成
 
-|ファイル/ディレクトリ名|説明|
+|ファイル名|説明|
 |:--|:--|
 |bluebutton|bluebuttonの設定ファイル|
 |direction.example|うちわの方向転換用サーボの動作角度記録用ファイル|
@@ -65,7 +67,7 @@ $ cd uchiwa
 $ mv direction.example direction
 ```
 
-### Bluetoothのペアリング(毎回)
+### Bluetoothのペアリング
 
 Bluetoothリモートシャッターの電源を入れ, コンソールで以下のコマンドを叩く.
 
@@ -80,7 +82,7 @@ Device FF:FF:XX:XX:XX:XX AB Shutter3
 [bluetooth]# pair FF:FF:XX:XX:XX:XX    // Shutter3とペアリング
 ```
 
-### bluebuttonの実行(毎回)
+### bluebuttonの実行
 
 ```bash
 $ bluebutton -d="Shutter3" -c ./bluebutton
