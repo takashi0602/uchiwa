@@ -46,6 +46,12 @@ $ git clone https://github.com/tyokinuhata/uchiwa.git
 $ cd uchiwa
 ```
 
+### サーボの設定(初回のみ)
+
+```bash
+$ mv direction.example direction
+```
+
 ### bluebuttonの設定(必要に応じて)
 
 ```bash
