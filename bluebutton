@@ -1,4 +1,2 @@
-keyup=echo KEY UP!
 keydown=sudo python3 uchiwa_angle.py
-longup=echo LONG UP!
 longdown=sudo python3 uchiwa_direction.py

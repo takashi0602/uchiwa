@@ -13,11 +13,20 @@ SSH接続が可能なRaspberry Pi
 
 <img src="./img/raspberrypi.jpg" width="350">
 
-サーボ２つ
+サーボモーター２つ
 
 <img src="./img/servo.jpg" width="350">
 
 // TODO: うちわ
+
+## ディレクトリ構成
+
+|ファイル/ディレクトリ名|説明|
+|:--|:--|
+|bluebutton|bluebuttonの設定ファイル|
+|direction.example|うちわの方向転換用サーボの動作角度記録用ファイル|
+|uchiwa_angle.py|うちわの首振り用サーボの制御コード|
+|uchiwa_direction.py|うちわの方向転換用サーボの制御コード|
 
 ## 設定
 
@@ -54,21 +63,6 @@ $ cd uchiwa
 
 ```bash
 $ mv direction.example direction
-```
-
-### bluebuttonの設定(必要に応じて)
-
-```bash
-$ vim bluebutton
-```
-
-`keyup`, `keydown`, `longup`, `longdown`に対してそれぞれそれぞれ動作を決めることができる.
-
-```
-keyup=echo KEY UP!
-keydown=echo KEY DOWN!
-longup=echo LONG UP!
-longdown=echo LONG DOWN!
 ```
 
 ### Bluetoothのペアリング(毎回)
