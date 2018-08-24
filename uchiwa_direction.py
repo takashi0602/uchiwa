@@ -1,7 +1,6 @@
 # うちわの向きを変える
 
 import RPi.GPIO as GPIO
-import time
 
 GPIO.setmode(GPIO.BCM)
 
@@ -18,12 +17,26 @@ servo = GPIO.PWM(gp_out, 50)
 # とりあえずゼロ指定だとサイクルが生まれないので特に動かないっぽい？
 servo.start(0)
 
-# デューティサイクルの値を変更することでサーボが回って角度が変わる。
-servo.ChangeDutyCycle(0.1)
-time.sleep(0.5)
+# ファイル読み込み
+fr = open('direction', 'r')
 
-servo.ChangeDutyCycle(6.1)
-time.sleep(0.5)
+# 現在の角度を取得
+direction = 0
+for row in fr:
+    direction = int(row.strip())
+
+# デューティサイクルの値を変更することでサーボが回って角度が変わる。
+servo.ChangeDutyCycle(direction / 10)
+
+if direction >= 180:
+    direction = 0
+
+# ファイル書き込み
+fw = open('direction', 'w')
+fw.write(str(direction + 10))
+
+fr.close()
+fw.close()
 
 servo.stop()
 GPIO.cleanup()
