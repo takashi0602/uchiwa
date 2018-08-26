@@ -26,7 +26,7 @@ def main():
 
     # 角度を書き込み
     if direction >= 12:
-        direction = 2
+        direction = 1
     write_direction(direction)
 
     # 後処理
