@@ -19,7 +19,9 @@ SSH接続が可能なRaspberry Pi
 
 <img src="./img/servo.jpg" width="350">
 
-// TODO: うちわ
+柄の部分を切断したうちわ
+
+<img src="./img/uchiwa.jpg" width="350">
 
 ## ファイル構成
 
