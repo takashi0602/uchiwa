@@ -1,6 +1,6 @@
 # Winds Servo 2018 Summer Edition
 
-<img src="./img/logo.jpg" width="500">
+<img src="./img/logo.png" width="500">
 
 Bluetoothボタンを押すとラズパイに取り付けたうちわが動作し, 涼しい気持ちになれます&#x1f300;
 
