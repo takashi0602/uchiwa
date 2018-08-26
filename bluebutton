@@ -1,2 +1,2 @@
-keydown=sudo python3 uchiwa_angle.py
-longdown=sudo python3 uchiwa_direction.py
+keydown=sudo python3 ./src/uchiwa_angle.py
+longdown=sudo python3 ./src/uchiwa_direction.py

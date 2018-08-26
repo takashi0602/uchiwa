@@ -64,7 +64,7 @@ $ cd uchiwa
 ### サーボの設定(初回のみ)
 
 ```bash
-$ cp direction.example direction
+$ cp ./src/direction.example ./src/direction
 ```
 
 ### Bluetoothのペアリング
