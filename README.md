@@ -1,4 +1,7 @@
 # Winds Servo 2018 Summer Edition
+
+<img src="./img/logo.png" width="500">
+
 Bluetoothボタンを押すとラズパイに取り付けたうちわが動作し, 涼しい気持ちになれます&#x1f300;
 
 // TODO: gif
@@ -19,7 +22,9 @@ SSH接続が可能なRaspberry Pi
 
 <img src="./img/servo.jpg" width="350">
 
-// TODO: うちわ
+柄の部分を切断したうちわ
+
+<img src="./img/uchiwa.jpg" width="350">
 
 ## ファイル構成
 
@@ -30,7 +35,17 @@ SSH接続が可能なRaspberry Pi
 |uchiwa_angle.py|うちわの首振り用サーボの制御コード|
 |uchiwa_direction.py|うちわの方向転換用サーボの制御コード|
 
-## 設定
+## ハードウェア側の設定
+
+// TODO: 書く
+
+### サーボと土台の接合
+
+### サーボとサーボの接合
+
+### サーボとうちわの接合
+
+## ソフトウェア側の設定
 
 ### SSH接続
 
