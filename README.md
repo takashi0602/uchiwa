@@ -10,13 +10,13 @@ Bluetoothボタンを押すとラズパイに取り付けたうちわが動作�
 
 ## 必要なもの
 
-ダイソーで300円で購入したBluetoothリモートシャッター
-
-<img src="./img/bluetooth_remote_shutter.jpg" width="350">
-
 SSH接続が可能なRaspberry Pi
 
 <img src="./img/raspberrypi.jpg" width="350">
+
+ダイソーで300円で購入したBluetoothリモートシャッター
+
+<img src="./img/bluetooth_remote_shutter.jpg" width="350">
 
 サーボモーター２つ
 
@@ -29,6 +29,10 @@ SSH接続が可能なRaspberry Pi
 サーボ用カメラマウント
 
 [これ](https://www.amazon.co.jp/gp/product/B07B2W39WJ/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+
+ジャンパー線(オス - メス型)
+
+// TODO: 画像
 
 ## ファイル構成
 
@@ -60,6 +64,11 @@ SSH接続が可能なRaspberry Pi
 <img src="./img/servo_and_uchiwa.jpg" width="350">
 
 ### GPIOの設定
+
+うちわ動作用のサーボ: GPIO18
+うちわの方向転換用のサーボ: GPIO17
+
+DC Power 5VとGroundは適当に.
 
 ## ソフトウェア側の設定
 
