@@ -26,7 +26,9 @@ SSH接続が可能なRaspberry Pi
 
 <img src="./img/uchiwa.jpg" width="350">
 
-// サーボとサーボをつなげるやつ
+サーボ用カメラマウント
+
+[これ](https://www.amazon.co.jp/gp/product/B07B2W39WJ/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
 
 ## ファイル構成
 
@@ -41,13 +43,19 @@ SSH接続が可能なRaspberry Pi
 
 ### サーボと土台の接合
 
+木材にネジでえいってやる.
+
 <img src="./img/base_and_servo.jpg" width="350">
 
 ### サーボとサーボの接合
 
+サーボ用カメラマウントでいい感じにやる.
+
 <img src="./img/servo_and_servo.jpg" width="350">
 
 ### サーボとうちわの接合
+
+針金で適当にぐるぐるにする.
 
 <img src="./img/servo_and_uchiwa.jpg" width="350">
 
