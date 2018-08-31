@@ -26,6 +26,8 @@ SSH接続が可能なRaspberry Pi
 
 <img src="./img/uchiwa.jpg" width="350">
 
+// サーボとサーボをつなげるやつ
+
 ## ファイル構成
 
 |ファイル名|説明|
@@ -37,13 +39,17 @@ SSH接続が可能なRaspberry Pi
 
 ## ハードウェア側の設定
 
-// TODO: 書く
-
 ### サーボと土台の接合
+
+<img src="./img/base_and_servo.jpg" width="350">
 
 ### サーボとサーボの接合
 
+<img src="./img/servo_and_servo.jpg" width="350">
+
 ### サーボとうちわの接合
+
+<img src="./img/servo_and_uchiwa.jpg" width="350">
 
 ## ソフトウェア側の設定
 
