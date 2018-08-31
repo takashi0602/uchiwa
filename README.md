@@ -59,6 +59,8 @@ SSH接続が可能なRaspberry Pi
 
 <img src="./img/servo_and_uchiwa.jpg" width="350">
 
+### GPIOの設定
+
 ## ソフトウェア側の設定
 
 ### SSH接続
