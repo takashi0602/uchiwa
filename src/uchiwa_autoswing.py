@@ -6,10 +6,10 @@ import requests
 # 温度取るやつ
 import smbus
 import time
+
 # 温度用の定数
 i2c = smbus.SMBus(1)
 address = 0x5c
- 
 
 def get_discomfort():
     global i2c
@@ -53,9 +53,6 @@ def move_servo(servo):
 
 # メイン関数
 def main():
-    #i2c = smbus.SMBus(1)
-    #address = 0x5c
-    
     # GPIOのモード設定
     GPIO.setmode(GPIO.BCM)
 
@@ -67,6 +64,7 @@ def main():
     servo = GPIO.PWM(gp_out, 50)
     servo.start(0)
     print('start loop')
+
     # 以下、無限ループ
     try:
         while True:
