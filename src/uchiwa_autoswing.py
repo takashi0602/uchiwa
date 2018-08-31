@@ -35,7 +35,7 @@ def get_discomfort():
     print(ondo) # 温度表示
     print(discomfort)
 
-    return {"discomfort": discomfort, "shitudo": shitudo, "ondo": ondo}
+    return {'discomfort': discomfort, 'shitudo': shitudo, 'ondo': ondo}
 
 def move_servo(servo):
     # サーボを動作させる
@@ -60,13 +60,13 @@ def main():
     try:
         while True:
             discomfort = get_discomfort()
-            if discomfort["discomfort"] > 70:
-                requests.post("https://hooks.slack.com/services/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",
+            if discomfort['discomfort'] > 70:
+                requests.post('https://hooks.slack.com/services/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',
                     json = {
-                        "text":
-                        "*アツイアツーーーーーーイｗｗｗｗｗｗｗ*\n\n" +
-                        "温度: " + str(discomfort["ondo"]) + "\n" +
-                        "湿度: " + str(discomfort["shitudo"])
+                        'text':
+                        '*アツイアツーーーーーーイｗｗｗｗｗｗｗ*\n\n' +
+                        '温度: ' + str(discomfort['ondo']) + '\n' +
+                        '湿度: ' + str(discomfort['shitudo'])
                     }
                 )
                 move_servo(servo)
