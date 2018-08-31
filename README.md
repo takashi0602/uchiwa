@@ -32,7 +32,7 @@ SSH接続が可能なRaspberry Pi
 
 ジャンパー線(オス - メス型)
 
-// TODO: 画像
+<img src="./img/jumper_code.jpg" width="350">
 
 ## ファイル構成
 
