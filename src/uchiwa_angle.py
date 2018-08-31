@@ -20,7 +20,7 @@ def main():
     # サーボを動作させる
     servo.ChangeDutyCycle(13)
     time.sleep(0.5)
-    servo.ChangeDutyCycle(7)
+    servo.ChangeDutyCycle(6)
     time.sleep(0.5)
 
     # 後処理
