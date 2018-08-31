@@ -18,7 +18,7 @@ def main():
     servo.start(0)
 
     # サーボを動作させる
-    servo.ChangeDutyCycle(2)
+    servo.ChangeDutyCycle(13)
     time.sleep(0.5)
     servo.ChangeDutyCycle(7)
     time.sleep(0.5)
