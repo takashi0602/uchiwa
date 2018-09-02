@@ -2,7 +2,9 @@
 
 <img src="./img/logo.png" width="500">
 
-Bluetoothボタンを押すとラズパイに取り付けたうちわが動作し, 涼しい気持ちになれます&#x1f300;
+**Winds Servo が切り開く未来
+周囲の気温がどのようなものであっても、究極の涼を提供するシステムである Winds Servo がお役に立ちます。
+オンプレミスまたはお手元のUchiwaで Winds Servo のプログラムを実行します。**
 
 <img src="./img/demo.gif" width="350">
 
