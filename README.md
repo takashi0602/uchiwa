@@ -4,7 +4,7 @@
 
 **Winds Servo が切り開く未来
 周囲の気温がどのようなものであっても、究極の涼を提供するシステムである Winds Servo がお役に立ちます。
-オンプレミスまたはお手元のUchiwaで Winds Servo のプログラムを実行します。**
+オンプレミスまたはお手元の Uchiwa で Winds Servo のプログラムを実行します。**
 
 <img src="./img/demo.gif" width="350">
 
